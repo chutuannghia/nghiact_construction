@@ -1,0 +1,80 @@
+<nav class="fixed z-30 w-full hidden xl:flex flex-wrap items-center justify-between px-2 py-3 mt-0 mb-3 laptop" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
+  <div class="w-full mx-auto flex flex-wrap items-center justify-between 2xl:px-12">
+    <div class="w-full flex lg:w-auto  px-4 lg:block lg:justify-start">
+      <a [routerLink]="" routerLinkActive="active" class="items-center">
+        <img src="assets/images/logo.png" class="object-scale-down h-24 w-auto" alt="Flowbite Logo" />
+    </a>
+    </div>
+    <ul class="flex flex-col lg:flex-row list-none ml-auto justify-between 2xl:w-1/2">
+      <li class="nav-item">
+        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" [routerLink]="" routerLinkActive="active" >
+          <span class="ml-2">HOME</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" [routerLink]="" routerLinkActive="active">
+          <span class="ml-2">DỰ ÁN NHÀ PHỐ</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" [routerLink]="" routerLinkActive="active">
+          <span class="ml-2">VĂN PHÒNG,SHOWROOM</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" [routerLink]="" routerLinkActive="active">
+          <span class="ml-2">DỰ ÁN F&B</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" [routerLink]="" routerLinkActive="active">
+          <span class="ml-2">DỰ ÁN CĂN HỘ</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<nav class="fixed w-full z-30 xl:hidden flex flex-wrap items-center justify-between mb-3" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
+  <div class="container mx-auto flex flex-wrap items-center justify-between">
+    <button [ngClass]="{'hidden':showMenu,'flex':!showMenu}" class="flex items-center pl-12 my-auto py-8" (click)="toggleNavbar()">
+      <fa-icon class="text-3xl text-white" [icon]="faBars"></fa-icon>
+    </button>
+    <div [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="fixed mobile">
+      <ul class="list-none ml-auto fixed w-48 h-screen bg-black pl-12">
+        <li class="nav-item py-7">
+          <button [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="flex items-center px-3 py-2" (click)="toggleNavbar()">
+            <span class="text-3xl text-white">X</span>
+          </button>
+        </li>
+        <li class="nav-item pb-2">
+          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" [routerLink]="" routerLinkActive="active">
+            <span class="ml-2">HOME</span>
+          </a>
+        </li>
+        <li class="nav-item pb-2">
+          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" [routerLink]="" routerLinkActive="active">
+            <span class="ml-2">DỰ ÁN NHÀ PHỐ</span>
+          </a>
+        </li>
+        <li class="nav-item pb-2">
+          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" [routerLink]="" routerLinkActive="active">
+            <span class="ml-2">VĂN PHÒNG, SHOWROOM</span>
+          </a>
+        </li>
+        <li class="nav-item pb-2">
+          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" [routerLink]="" routerLinkActive="active">
+            <span class="ml-2">DỰ ÁN F&B</span>
+          </a>
+        </li>
+        <li class="nav-item pb-2">
+          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" [routerLink]="" routerLinkActive="active">
+            <span class="ml-2">DỰ ÁN CĂN HỘ</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+      <a href="" class="items-center fixed right-12 my-auto top-2">
+        <img src="assets/images/logo.png" class="object-scale-down h-24 w-auto" alt="Flowbite Logo" />
+    </a>
+    </div>
+</nav>

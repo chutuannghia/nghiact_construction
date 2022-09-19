@@ -1,0 +1,21 @@
+.homebg{
+  width: 100vw;
+    height: 100vh;
+    position:relative;
+    margin: 0%;
+    background-image: url('../../../assets/images/bannerhome.jpg');
+    transition: all .5s linear;
+    z-index: 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+.content1{
+  transition: all .5s linear;
+  z-index: 0;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  font-size: 2em;
+  font-family:sans-serif;
+}

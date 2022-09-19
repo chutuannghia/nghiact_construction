@@ -1,0 +1,29 @@
+.laptop{
+  width: 100%;
+  transition: all 1s ease-in;
+}
+.changebg{
+  background-color: rgba(000, 0, 0, 0.5);
+}
+a.active{
+  padding: 5px 10px;
+  border:1px solid white;
+  margin: 0;
+}
+a{
+  cursor: pointer;
+  :hover{
+    color: white;
+  }
+}
+
+.mobile{
+  transition: all .5s linear;
+  &ul{
+    transition: margin-right 5s ease-out;
+  }
+}
+button{
+  transition-delay: 2s;
+  transform: rotate3d(180);
+}
