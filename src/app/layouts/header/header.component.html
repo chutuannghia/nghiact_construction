@@ -35,12 +35,12 @@
   </div>
 </nav>
 <nav class="fixed w-full z-30 xl:hidden flex flex-wrap items-center justify-between mb-3" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
-  <div class="container mx-auto flex flex-wrap items-center justify-between">
+  <div class="container px-auto flex flex-wrap items-center justify-between">
     <button [ngClass]="{'hidden':showMenu,'flex':!showMenu}" class="flex items-center pl-12 my-auto py-8" (click)="toggleNavbar()">
       <fa-icon class="text-3xl text-white" [icon]="faBars"></fa-icon>
     </button>
     <div [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="fixed mobile">
-      <ul class="list-none ml-auto fixed w-48 h-screen bg-black pl-12">
+      <ul class="list-none pl-auto fixed w-48 h-screen bg-black pl-12">
         <li class="nav-item py-7">
           <button [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="flex items-center px-3 py-2" (click)="toggleNavbar()">
             <span class="text-3xl text-white">X</span>

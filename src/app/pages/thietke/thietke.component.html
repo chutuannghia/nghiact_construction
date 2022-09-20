@@ -1,16 +1,20 @@
-<div class="w-screen items-center flex flex-wrap">
-  <div class=":w-full md:w-1/2 flex flex-wrap">
-    <div class="justify-between mx-auto" *ngFor="let img of listItem">
-      <img src="{{img[0]}}" alt="{{img[1]}}" class="object-cover rounded-2xl w-44 sm:w-64 md:w-24 lg:w-36 xl:w-40 2xl:w-48">
-      <p class="text-center py-5">{{img[1]}}</p>
+<div class="w-full m-0 items-center flex flex-wrap">
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full md:w-1/2 bg-white p-4">
+    <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of listItem">
+      <div class="w-full aspect-[4/3]">
+        <img src="{{img[0]}}" alt="{{img[1]}}" class="w-full rounded-xl">
+      </div>
+      <b class="text-lg mt-2">{{img[1]}}</b>
     </div>
   </div>
-  <div class=":w-full md:w-1/2 flex flex-wrap justify-center items-center">
+  <div class="w-full md:w-1/2  justify-center items-center">
     <div class="text-3xl p-16 font-bold">THIẾT KẾ, THI CÔNG VÀ SETUP HỆ THỐNG SHOWROOM VĂN PHÒNG, CỬA HÀNG F&B</div>
-    <p class="px-16 pb-16">Bằng sức mạnh của một tập thể đoàn kết, sự năng động của mỗi cá nhân và kinh nghiệm thực tiễn khi đã từng tham gia xây dựng cơ sở hạ tầng của các nhãn hàng lớn như: Thế Giới Di Động, Điện Máy Xanh, Bách Hóa Xanh, Texas Chicken, King Coffee, The Coffee Housse, Terra Coffee, Sasin, The Pizza Company,…</p>
+    <p class="px-16 pb-16">Bằng sức mạnh của một tập thể đoàn kết, sự năng động của mỗi cá nhân và kinh nghiệm thực
+      tiễn khi đã từng tham gia xây dựng cơ sở hạ tầng của các nhãn hàng lớn như: Thế Giới Di Động, Điện Máy Xanh,
+      Bách Hóa Xanh, Texas Chicken, King Coffee, The Coffee Housse, Terra Coffee, Sasin, The Pizza Company,…</p>
     <p class="px-16">
-
-Với lợi thế tốc độ thi công nhanh, khả năng thi công rộng, New Construction tự tin đồng hành cùng các khách hàng trên nhiều địa bàn trong lĩnh vực thiết kế, thi công các hệ thống chuỗi.
+      Với lợi thế tốc độ thi công nhanh, khả năng thi công rộng, New Construction tự tin đồng hành cùng các khách hàng
+      trên nhiều địa bàn trong lĩnh vực thiết kế, thi công các hệ thống chuỗi.
     </p>
   </div>
 </div>
