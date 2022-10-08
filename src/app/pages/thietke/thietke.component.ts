@@ -1,5 +1,6 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, OnInit, SimpleChanges } from '@angular/core';
+import { faGem } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-thietke',
@@ -7,6 +8,7 @@ import { Component, OnInit, SimpleChanges } from '@angular/core';
   styleUrls: ['./thietke.component.scss']
 })
 export class ThietkeComponent implements OnInit {
+  faGem = faGem;
   constructor() {
 
     }

@@ -14,7 +14,7 @@ import { faFish } from '@fortawesome/free-solid-svg-icons';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-   FontAwesomeModule
+   FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
