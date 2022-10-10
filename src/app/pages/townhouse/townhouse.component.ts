@@ -60,12 +60,12 @@ export class TownhouseComponent implements OnInit {
    slickleft(){
     this.change = this.change - 1;
     if(this.change < 1){
-      this.change = 4;
+      this.change = 2;
     }
    }
    slickright(){
     this.change += this.change;
-    if(this.change > 4){
+    if(this.change > 2){
       this.change = 1;
     }
    }
