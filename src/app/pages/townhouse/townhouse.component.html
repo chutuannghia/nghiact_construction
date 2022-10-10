@@ -1,0 +1,136 @@
+<app-layout>
+  <div class="bg-gray-100 relative th_container">
+    <div *ngIf="change == 1">
+      <div class="homebg items-center" style="background-image: url('../../../assets/images/townhouse/banner-np.jpg');">
+        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">DỰ ÁN NHÀ PHỐ</p>
+      </div>
+      <div class="w-full flex absolute mb-4">
+        <div class="w-full flex absolute bottom-20 justify-center">
+          <h2 class="text-4xl text-white text-center font-semibold">NHÀ ĐỒNG NAI</h2>
+        </div>
+      </div>
+      <div class="w-full relative">
+        <div class="text-center">
+          <h2 class="my-10 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Nhà Đồng Nai - Nhà Anh Sơn</h2>
+          <p class="text-md" style="font-family: Helvetica;opacity:0.9">
+            Chủ Đầu Tư: Anh Hà Ngọc Sơn <br>
+            Quy mô: 70 m2 x 2 lầu <br>
+            Mức đầu tư: 1.5 tỷ <br>
+            Phong cách: hiện đại
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full py-4 px-16">
+          <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of anhson">
+            <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
+              <a style="cursor:pointer">
+                  <img class="rounded-lg md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
+              </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="change == 2">
+      <div class="homebg items-center" style="background-image: url('../../../assets/images/townhouse/banner-np1.jpg');">
+        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">DỰ ÁN NHÀ PHỐ</p>
+      </div>
+      <div class="w-full flex absolute mb-4">
+        <div class="w-full flex absolute bottom-20 justify-center">
+          <h2 class="text-4xl text-white text-center font-semibold">NHÀ LONG AN</h2>
+        </div>
+      </div>
+      <div class="w-full relative">
+        <div class="text-center">
+          <h2 class="my-10 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Nhà Long An - Nhà anh Lộc</h2>
+          <p class="text-md" style="font-family: Helvetica;opacity:0.9">
+            Chủ đầu tư: Anh Lộc<br>
+            Quy mô: 120m2 <br>
+            Mức đầu tư: 1.6 tỷ <br>
+
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full py-4 px-16">
+          <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of anhloc">
+            <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
+              <a style="cursor:pointer">
+                  <img class="rounded-lg md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
+              </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="change == 3">
+      <div class="homebg items-center" style="background-image: url('../../../assets/images/townhouse/banner-np2.jpg');">
+        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">DỰ ÁN NHÀ PHỐ</p>
+      </div>
+      <div class="w-full flex absolute mb-4">
+        <div class="w-full flex absolute bottom-20 justify-center">
+          <h2 class="text-4xl text-white text-center font-semibold">NHÀ QUẬN 2</h2>
+        </div>
+      </div>
+      <div class="w-full relative">
+        <div class="text-center">
+          <h2 class="my-10 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Nhà Quận 2 - Nhà anh Phú</h2>
+          <p class="text-md" style="font-family: Helvetica;opacity:0.9">
+            Chủ đầu tư: Anh Phú <br>
+            Quy mô: Làm mới Bếp và phòng làm việc <br>
+            Mức đầu tư: 180tr <br>
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full py-4 px-16">
+          <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of anhphu">
+            <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
+              <a style="cursor:pointer">
+                  <img class="rounded-lg md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
+              </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="change == 4">
+      <div class="homebg items-center" style="background-image: url('../../../assets/images/townhouse/banner-np3.jpg');">
+        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">DỰ ÁN NHÀ PHỐ</p>
+      </div>
+      <div class="w-full flex absolute mb-4">
+        <div class="w-full flex absolute bottom-20 justify-center">
+          <h2 class="text-4xl text-white text-center font-semibold">NHÀ BÌNH DƯƠNG</h2>
+        </div>
+      </div>
+      <div class="w-full relative">
+        <div class="text-center">
+          <h2 class="my-10 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Nhà Bình Dương - Nhà chị Loan</h2>
+          <p class="text-md" style="font-family: Helvetica;opacity:0.9">
+            Chủ Đầu Tư: Chị Loan <br>
+            Quy mô: 70 m2 x 2 lầu <br>
+            Mức đầu tư: 1.3 tỷ <br>
+            Phong cách: hiện đại
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full py-4 px-16">
+          <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of chiloan">
+            <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
+              <a style="cursor:pointer">
+                  <img class="rounded-lg md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
+              </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fixed top-1/2 left-5 transition-all">
+      <button (click)="slickleft()" class="text-2xl opacity-70 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class=" opacity-30 hover:opacity-100 hover:text-gray-600 dark:text-white" width="30"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </button>
+    </div>
+    <div class="fixed top-1/2 right-5 transition-all">
+      <button (click)="slickright()" class="text-2xl opacity-70 cursor-pointer ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="opacity-30 hover:opacity-100 hover:text-gray-800  dark:text-white" width="30"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+      </button>
+    </div>
+  </div>
+</app-layout>

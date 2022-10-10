@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SliderComponent } from './slider/slider.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SelectedComponent } from './selected/selected.component';
+import { TownhouseComponent } from './townhouse/townhouse.component';
 
 
 
@@ -16,7 +17,8 @@ import { SelectedComponent } from './selected/selected.component';
     HomeComponent,
     ThietkeComponent,
     SliderComponent,
-    SelectedComponent
+    SelectedComponent,
+    TownhouseComponent
   ],
   imports: [
     CommonModule,

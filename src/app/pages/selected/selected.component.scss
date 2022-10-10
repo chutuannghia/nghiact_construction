@@ -1,0 +1,18 @@
+.homebg{
+  width: 100vw;
+    height: 100vh;
+    position:relative;
+    margin: 0%;
+    background-image: url('../../../assets/images/selected/bg-selected.jpg');
+    transition: all .5s linear;
+    z-index: 0;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+.thongke{
+  background-image: url('../../../assets/images/selected/bg_banner.jpg');
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}

@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { SelectedComponent } from './selected/selected.component';
+import { TownhouseComponent } from './townhouse/townhouse.component';
 
 const routes: Routes = [
   {
-    path:'',component:HomeComponent
+    path:'home',component:HomeComponent
+  },
+  {
+    path:'selected',component:SelectedComponent,
+  },
+  {
+    path:'townhouse',component:TownhouseComponent,
   },
   {
     path:'**',component:HomeComponent
