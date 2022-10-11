@@ -10,6 +10,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SelectedComponent } from './selected/selected.component';
 import { TownhouseComponent } from './townhouse/townhouse.component';
 import { ShowroomComponent } from './showroom/showroom.component';
+import { ProjectfbComponent } from './projectfb/projectfb.component';
+import { ApartmentComponent } from './apartment/apartment.component';
 
 
 
@@ -20,7 +22,9 @@ import { ShowroomComponent } from './showroom/showroom.component';
     SliderComponent,
     SelectedComponent,
     TownhouseComponent,
-    ShowroomComponent
+    ShowroomComponent,
+    ProjectfbComponent,
+    ApartmentComponent
   ],
   imports: [
     CommonModule,
