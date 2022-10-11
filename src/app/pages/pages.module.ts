@@ -9,6 +9,7 @@ import { SliderComponent } from './slider/slider.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SelectedComponent } from './selected/selected.component';
 import { TownhouseComponent } from './townhouse/townhouse.component';
+import { ShowroomComponent } from './showroom/showroom.component';
 
 
 
@@ -18,7 +19,8 @@ import { TownhouseComponent } from './townhouse/townhouse.component';
     ThietkeComponent,
     SliderComponent,
     SelectedComponent,
-    TownhouseComponent
+    TownhouseComponent,
+    ShowroomComponent
   ],
   imports: [
     CommonModule,

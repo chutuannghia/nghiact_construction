@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SelectedComponent } from './selected/selected.component';
+import { ShowroomComponent } from './showroom/showroom.component';
 import { TownhouseComponent } from './townhouse/townhouse.component';
 
 const routes: Routes = [
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path:'townhouse',component:TownhouseComponent,
+  },
+  {
+    path:'showroom',component:ShowroomComponent
   },
   {
     path:'**',component:HomeComponent

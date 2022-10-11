@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-townhouse',
@@ -62,14 +64,30 @@ export class TownhouseComponent implements OnInit {
     if(this.change < 1){
       this.change = 2;
     }
+    if (isPlatformBrowser(this.platform)) {
+      // here you can run any browser specific code, like:
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
    }
    slickright(){
     this.change += this.change;
     if(this.change > 2){
       this.change = 1;
     }
+    if (isPlatformBrowser(this.platform)) {
+      // here you can run any browser specific code, like:
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
    }
-  constructor() { }
+  constructor(private router: ActivatedRoute,@Inject(PLATFORM_ID) private platform: Object) { }
 
   ngOnInit(): void {
   }

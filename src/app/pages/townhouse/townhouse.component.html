@@ -20,10 +20,10 @@
           </p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto py-4 px-8 xl:px-16">
-          <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of anhson">
-            <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
+          <div class="justify-start items-center mb-4 w-full h-full cursor-pointer" *ngFor="let img of anhson">
+            <div class="relative w-full transition-all duration-300 cursor-pointer">
               <a style="cursor:pointer">
-                  <img class="rounded-lg md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
+                  <img class="rounded-lg w-full md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
               </a>
           </div>
           </div>
@@ -49,10 +49,10 @@
             </p>
           </div>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto py-4 px-8 xl:px-16">
-            <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of anhloc">
-              <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
-                <a style="cursor:pointer">
-                    <img class="rounded-lg md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
+            <div class="justify-start items-center mb-4 w-full h-full cursor-pointer" *ngFor="let img of anhloc">
+              <div class="relative w-full transition-all duration-300 cursor-pointer">
+                <a style="cursor:pointer w-full">
+                    <img class="rounded-lg  w-full md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
                 </a>
             </div>
             </div>
@@ -79,10 +79,10 @@
           </p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto py-4 px-8 xl:px-16">
-          <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of anhphu">
-            <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
-              <a style="cursor:pointer">
-                  <img class="rounded-lg md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
+          <div class="justify-start items-center mb-4 w-full h-full cursor-pointer" *ngFor="let img of anhphu">
+            <div class="relative w-full transition-all duration-300 cursor-pointer">
+              <a style="cursor:pointer w-full">
+                  <img class="rounded-lg  w-full md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
               </a>
           </div>
           </div>
@@ -107,28 +107,28 @@
           </p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto py-4 px-8 xl:px-16">
-          <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of chiloan">
-            <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
-              <a style="cursor:pointer">
-                  <img class="rounded-lg md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
+          <div class="justify-start items-center mb-4 w-full h-full cursor-pointer" *ngFor="let img of chiloan">
+            <div class="relative w-full transition-all duration-300 cursor-pointer">
+              <a style="cursor:pointer w-full">
+                  <img class="rounded-lg  w-full md:h-[250px] drop-shadow-xl" src="../../../assets/images/townhouse/{{img[0]}}" alt="{{img[1]}}" />
               </a>
           </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="fixed top-1/2 md:left-5 left-0 transition-all">
+    <div class="fixed top-1/2 xl:left-5 left-0 transition-all">
       <button (click)="slickleft()" class="text-2xl cursor-pointer">
-        <span class=" xl:hidden hover:opacity-100 hover:text-gray-600 dark:text-gray-300 text-gray-500"><</span>
-       <div class="hidden xl:block">
+        <span class=" md:hidden hover:opacity-100 hover:text-gray-600 dark:text-gray-300 text-gray-500"><</span>
+       <div class="hidden md:block">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class=" opacity-30 hover:opacity-100 hover:text-gray-600 dark:text-gray-300" width="30"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
        </div>
       </button>
     </div>
-    <div class="fixed top-1/2 right-0 md:right-5 transition-all">
+    <div class="fixed top-1/2 right-0 xl:right-5 transition-all">
       <button (click)="slickright()" class="text-2xl cursor-pointer ">
-        <p class=" xl:hidden hover:opacity-100 hover:text-gray-600 dark:text-gray-300 text-gray-500">></p>
-        <div class="hidden xl:block">
+        <p class=" md:hidden hover:opacity-100 hover:text-gray-600 dark:text-gray-300 text-gray-500">></p>
+        <div class="hidden md:block">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="opacity-30 hover:opacity-100 hover:text-gray-800  dark:text-gray-300" width="30"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
         </div>
       </button>
