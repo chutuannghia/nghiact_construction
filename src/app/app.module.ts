@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import {FontAwesomeModule,FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import { faFilm } from '@fortawesome/free-solid-svg-icons';
 import { faFish } from '@fortawesome/free-solid-svg-icons';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +18,8 @@ import { faFish } from '@fortawesome/free-solid-svg-icons';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
    FontAwesomeModule,
+   CarouselModule,
+   BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

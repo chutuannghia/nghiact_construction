@@ -64,6 +64,8 @@ export class ShowroomComponent implements OnInit {
     ['phc2.jpg','Phố Hương Coffee 2'],
     ['phc3.jpg','Phố Hương Coffee 3'],
     ['phc4.jpg','Phố Hương Coffee 4'],
+    ['phc5.jpg','Phố Hương Coffee 5'],
+    ['phc6.jpg','Phố Hương Coffee 6'],
   ];
 
   vpcg = [

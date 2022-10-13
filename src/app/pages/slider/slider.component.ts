@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
@@ -14,7 +15,29 @@ export class SliderComponent implements OnInit {
   ];
   constructor() {
   }
-
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    autoplay:true,
+    margin:30,
+    navSpeed: 600,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1
+      },
+      760: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      }
+    },
+    nav: false
+  }
   ngOnInit() {
   }
 }

@@ -1,39 +1,44 @@
-<nav class="fixed z-30 w-full hidden xl:flex flex-wrap items-center justify-between px-2 py-3 mt-0 mb-3 laptop" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
-  <div class="w-full mx-auto flex flex-wrap items-center justify-between 2xl:px-12">
+<nav class="fixed z-30 w-full hidden xl:flex flex-wrap items-center justify-between px-2 laptop" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
+  <div class="w-full mx-auto flex flex-wrap items-center justify-between 2xl:px-12 py-2">
     <div class="w-full flex lg:w-auto  px-4 lg:block lg:justify-start">
       <a routerLink="/home" class="items-center">
-        <img src="assets/images/logo.png" class="object-scale-down h-24 w-auto" alt="Flowbite Logo" />
+        <div *ngIf="changeColor; else elseValue">
+          <img src="assets/images/logo2.png" class="object-scale-down h-16 w-auto" alt="Flowbite Logo" />
+        </div>
+        <ng-template #elseValue>
+          <img src="assets/images/logo.png" class="object-scale-down h-16 w-auto" alt="Flowbite Logo" />
+        </ng-template>
     </a>
     </div>
     <ul class="flex flex-col lg:flex-row list-none ml-auto justify-between 2xl:w-1/2">
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" routerLink="/home" routerLinkActive="active">
-          <span class="ml-2">HOME</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/home" routerLinkActive="active">
+          <span class="ml-2 hover:uppercase capitalize">home</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" routerLink="/selected" routerLinkActive="active" >
-          <span class="ml-2">DỰ ÁN NỔI BẬT</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/selected" routerLinkActive="active" >
+          <span class="ml-2 hover:uppercase capitalize">dự án nổi bật</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" routerLink="/townhouse" routerLinkActive="active">
-          <span class="ml-2">DỰ ÁN NHÀ PHỐ</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/townhouse" routerLinkActive="active">
+          <span class="ml-2 hover:uppercase capitalize">dự án nhà phố</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" routerLink="/showroom" routerLinkActive="active">
-          <span class="ml-2">VĂN PHÒNG,SHOWROOM</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/showroom" routerLinkActive="active">
+          <span class="ml-2 hover:uppercase capitalize">văn phòng, showroom</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" routerLink="/projectfb" routerLinkActive="active">
-          <span class="ml-2">DỰ ÁN F&B</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/projectfb" routerLinkActive="active">
+          <span class="ml-2 hover:uppercase capitalize">dự án F&B</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-white hover:opacity-75" routerLink="/apartment" routerLinkActive="active">
-          <span class="ml-2">DỰ ÁN CĂN HỘ</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/apartment" routerLinkActive="active">
+          <span class="ml-2 hover:uppercase capitalize">dự án căn hộ</span>
         </a>
       </li>
     </ul>
@@ -52,39 +57,39 @@
           </button>
         </li>
         <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" routerLink="/home" routerLinkActive="active">
-            <span class="ml-2">HOME</span>
+          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/home" routerLinkActive="active">
+            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">home</span>
           </a>
         </li>
         <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" routerLink="/selected" routerLinkActive="active">
-            <span class="ml-2">DỰ ÁN NỔI BẬT</span>
+          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/selected" routerLinkActive="active">
+            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">dự án nội bật</span>
           </a>
         </li>
         <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" routerLink="/townhouse" routerLinkActive="active">
-            <span class="ml-2">DỰ ÁN NHÀ PHỐ</span>
+          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/townhouse" routerLinkActive="active">
+            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">dự án nhà phố</span>
           </a>
         </li>
         <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" routerLink="/showroom" routerLinkActive="active">
-            <span class="ml-2">VĂN PHÒNG, SHOWROOM</span>
+          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/showroom" routerLinkActive="active">
+            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">văn phòng, showroom</span>
           </a>
         </li>
         <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" routerLink="/projectfb" routerLinkActive="active">
-            <span class="ml-2">DỰ ÁN F&B</span>
+          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/projectfb" routerLinkActive="active">
+            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">dự án F&B</span>
           </a>
         </li>
         <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm 2xl:text-xl uppercase font-bold leading-snug text-gray-200 hover:opacity-75" routerLink="/apartment" routerLinkActive="active">
-            <span class="ml-2">DỰ ÁN CĂN HỘ</span>
+          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/apartment" routerLinkActive="active">
+            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">dự án căn hộ</span>
           </a>
         </li>
       </ul>
     </div>
       <a href="" class="items-center fixed right-12 my-auto top-2">
-        <img src="assets/images/logo.png" class="object-scale-down h-24 w-auto" alt="Flowbite Logo" />
+        <img src="assets/images/logo1.png" class="object-scale-down h-20 w-auto" alt="Flowbite Logo" />
     </a>
     </div>
 </nav>
