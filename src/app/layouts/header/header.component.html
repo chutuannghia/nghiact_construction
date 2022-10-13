@@ -3,42 +3,42 @@
     <div class="w-full flex lg:w-auto  px-4 lg:block lg:justify-start">
       <a routerLink="/home" class="items-center">
         <div *ngIf="changeColor; else elseValue">
-          <img src="assets/images/logo2.png" class="object-scale-down h-16 w-auto" alt="Flowbite Logo" />
+          <img src="assets/images/logo2.png" class="object-scale-down h-12 w-auto" alt="Flowbite Logo" />
         </div>
         <ng-template #elseValue>
-          <img src="assets/images/logo.png" class="object-scale-down h-16 w-auto" alt="Flowbite Logo" />
+          <img src="assets/images/logo.png" class="object-scale-down h-12 w-auto" alt="Flowbite Logo" />
         </ng-template>
     </a>
     </div>
     <ul class="flex flex-col lg:flex-row list-none ml-auto justify-between 2xl:w-1/2">
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/home" routerLinkActive="active">
-          <span class="ml-2 hover:uppercase capitalize">home</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/home" routerLinkActive="active">
+          <span class="ml-2 hover:font-bold capitalize">home</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/selected" routerLinkActive="active" >
-          <span class="ml-2 hover:uppercase capitalize">dự án nổi bật</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/selected" routerLinkActive="active" >
+          <span class="ml-2 hover:font-bold capitalize">dự án nổi bật</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/townhouse" routerLinkActive="active">
-          <span class="ml-2 hover:uppercase capitalize">dự án nhà phố</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/townhouse" routerLinkActive="active">
+          <span class="ml-2 hover:font-bold capitalize">dự án nhà phố</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/showroom" routerLinkActive="active">
-          <span class="ml-2 hover:uppercase capitalize">văn phòng, showroom</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/showroom" routerLinkActive="active">
+          <span class="ml-2 hover:font-bold capitalize">văn phòng, showroom</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/projectfb" routerLinkActive="active">
-          <span class="ml-2 hover:uppercase capitalize">dự án F&B</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/projectfb" routerLinkActive="active">
+          <span class="ml-2 hover:font-bold capitalize">dự án F&B</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-white" routerLink="/apartment" routerLinkActive="active">
-          <span class="ml-2 hover:uppercase capitalize">dự án căn hộ</span>
+        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/apartment" routerLinkActive="active">
+          <span class="ml-2 hover:font-bold capitalize">dự án căn hộ</span>
         </a>
       </li>
     </ul>
@@ -46,7 +46,7 @@
 </nav>
 <nav class="fixed w-full z-30 xl:hidden flex flex-wrap items-center justify-between mb-3" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
   <div class="container px-auto flex flex-wrap items-center justify-between">
-    <button [ngClass]="{'hidden':showMenu,'flex':!showMenu}" class="flex items-center pl-12 my-auto py-8" (click)="toggleNavbar()">
+    <button [ngClass]="{'hidden':showMenu,'flex':!showMenu}" class="flex items-center pl-12 my-auto py-4" (click)="toggleNavbar()">
       <fa-icon class="text-3xl text-white" [icon]="faBars"></fa-icon>
     </button>
     <div [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="fixed mobile">
@@ -89,7 +89,7 @@
       </ul>
     </div>
       <a href="" class="items-center fixed right-12 my-auto top-2">
-        <img src="assets/images/logo1.png" class="object-scale-down h-20 w-auto" alt="Flowbite Logo" />
+        <img src="assets/images/logo1.png" class="object-scale-down h-12 w-auto" alt="Flowbite Logo" />
     </a>
     </div>
 </nav>
