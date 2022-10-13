@@ -13,32 +13,32 @@
     <ul class="flex flex-col lg:flex-row list-none ml-auto justify-between 2xl:w-1/2">
       <li class="nav-item">
         <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/home" routerLinkActive="active">
-          <span class="ml-2 hover:font-bold capitalize">home</span>
+          <span class="ml-2 capitalize">home</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/selected" routerLinkActive="active" >
-          <span class="ml-2 hover:font-bold capitalize">dự án nổi bật</span>
+          <span class="ml-2 capitalize">dự án nổi bật</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/townhouse" routerLinkActive="active">
-          <span class="ml-2 hover:font-bold capitalize">dự án nhà phố</span>
+          <span class="ml-2 capitalize">dự án nhà phố</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/showroom" routerLinkActive="active">
-          <span class="ml-2 hover:font-bold capitalize">văn phòng, showroom</span>
+          <span class="ml-2 capitalize">văn phòng, showroom</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/projectfb" routerLinkActive="active">
-          <span class="ml-2 hover:font-bold capitalize">dự án F&B</span>
+          <span class="ml-2 capitalize">dự án F&B</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/apartment" routerLinkActive="active">
-          <span class="ml-2 hover:font-bold capitalize">dự án căn hộ</span>
+          <span class="ml-2 capitalize">dự án căn hộ</span>
         </a>
       </li>
     </ul>
@@ -49,47 +49,52 @@
     <button [ngClass]="{'hidden':showMenu,'flex':!showMenu}" class="flex items-center pl-12 my-auto py-4" (click)="toggleNavbar()">
       <fa-icon class="text-3xl text-white" [icon]="faBars"></fa-icon>
     </button>
-    <div [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="fixed mobile">
-      <ul class="list-none pl-auto fixed w-48 h-screen bg-black pl-12">
-        <li class="nav-item py-7">
-          <button [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="flex items-center px-3 py-2" (click)="toggleNavbar()">
-            <span class="text-3xl text-white">X</span>
-          </button>
-        </li>
-        <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/home" routerLinkActive="active">
-            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">home</span>
-          </a>
-        </li>
-        <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/selected" routerLinkActive="active">
-            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">dự án nội bật</span>
-          </a>
-        </li>
-        <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/townhouse" routerLinkActive="active">
-            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">dự án nhà phố</span>
-          </a>
-        </li>
-        <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/showroom" routerLinkActive="active">
-            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">văn phòng, showroom</span>
-          </a>
-        </li>
-        <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/projectfb" routerLinkActive="active">
-            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">dự án F&B</span>
-          </a>
-        </li>
-        <li class="nav-item pb-2">
-          <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/apartment" routerLinkActive="active">
-            <span class="ml-2 hover:opacity-90 hover:uppercase capitalize">dự án căn hộ</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-      <a href="" class="items-center fixed right-12 my-auto top-2">
+    <a href="" class="items-center fixed right-12 my-auto top-2">
+      <div *ngIf="changeColor; else elseValue1">
+        <img src="assets/images/logo2.png" class="object-scale-down h-12 w-auto" alt="Flowbite Logo" />
+      </div>
+      <ng-template #elseValue1>
         <img src="assets/images/logo1.png" class="object-scale-down h-12 w-auto" alt="Flowbite Logo" />
+      </ng-template>
     </a>
-    </div>
+  </div>
+  <div [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="fixed mobile">
+    <ul class="list-none pl-auto fixed w-48 h-screen bg-black pl-12">
+      <li class="nav-item py-7">
+        <button [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="flex items-center px-3 py-2" (click)="toggleNavbar()">
+          <span class="text-3xl text-white">&#x2715;</span>
+        </button>
+      </li>
+      <li class="nav-item pb-2">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/home" routerLinkActive="active">
+          <span class="ml-2 capitalize">home</span>
+        </a>
+      </li>
+      <li class="nav-item pb-2">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/selected" routerLinkActive="active">
+          <span class="ml-2 capitalize">dự án nội bật</span>
+        </a>
+      </li>
+      <li class="nav-item pb-2">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/townhouse" routerLinkActive="active">
+          <span class="ml-2 capitalize">dự án nhà phố</span>
+        </a>
+      </li>
+      <li class="nav-item pb-2">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/showroom" routerLinkActive="active">
+          <span class="ml-2 capitalize">văn phòng, showroom</span>
+        </a>
+      </li>
+      <li class="nav-item pb-2">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/projectfb" routerLinkActive="active">
+          <span class="ml-2 capitalize">dự án F&B</span>
+        </a>
+      </li>
+      <li class="nav-item pb-2">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/apartment" routerLinkActive="active">
+          <span class="ml-2 capitalize">dự án căn hộ</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>
