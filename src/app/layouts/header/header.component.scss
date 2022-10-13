@@ -3,7 +3,7 @@
   transition: all 1s ease-in;
 }
 .changebg{
-  background-color: rgba(000, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 a{
@@ -19,12 +19,12 @@ a{
 }
 
 .mobile{
-  transition: all .5s linear;
-  &ul{
-    transition: margin-right 5s ease-out;
-  }
+  transition-property: background-color;
+  transition-duration: 2s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.7s;
 }
 button{
-  transition-delay: 2s;
+  transition-delay: 1s;
   transform: rotate3d(180);
 }

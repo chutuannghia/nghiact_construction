@@ -44,7 +44,7 @@
     </ul>
   </div>
 </nav>
-<nav class="fixed w-full z-30 xl:hidden flex flex-wrap items-center justify-between mb-3" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
+<nav class="fixed w-full z-30 xl:hidden flex flex-wrap items-center justify-between mb-3 transition-all" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
   <div class="container px-auto flex flex-wrap items-center justify-between">
     <button [ngClass]="{'hidden':showMenu,'flex':!showMenu}" class="flex items-center pl-12 my-auto py-4" (click)="toggleNavbar()">
       <fa-icon class="text-3xl text-white" [icon]="faBars"></fa-icon>
@@ -59,7 +59,7 @@
     </a>
   </div>
   <div [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="fixed mobile">
-    <ul class="list-none pl-auto fixed w-48 h-screen bg-black pl-12">
+    <ul class="list-none pl-auto fixed w-48 h-screen bg-black pl-8">
       <li class="nav-item py-7">
         <button [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="flex items-center px-3 py-2" (click)="toggleNavbar()">
           <span class="text-3xl text-white">&#x2715;</span>
