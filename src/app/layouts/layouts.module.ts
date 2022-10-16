@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -15,7 +16,7 @@ import { RouterModule } from '@angular/router';
     LayoutComponent
   ],
   imports: [
-    CommonModule,FontAwesomeModule,RouterModule
+    CommonModule,FontAwesomeModule,RouterModule,CarouselModule,
   ],
   exports:[HeaderComponent,
     FooterComponent,

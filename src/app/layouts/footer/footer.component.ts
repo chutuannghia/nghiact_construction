@@ -9,7 +9,7 @@ import {faEnvelope,} from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
+  LinkFB = true;
   faEnvelope = faEnvelope;
   constructor(private router: ActivatedRoute,@Inject(PLATFORM_ID) private platform: Object) { }
 
@@ -24,5 +24,11 @@ export class FooterComponent implements OnInit {
         behavior: 'smooth',
       });
     }
+  }
+  linkLeft(){
+    this.LinkFB = !this.LinkFB;
+  }
+  linkRight(){
+    this.LinkFB = !this.LinkFB;
   }
 }
