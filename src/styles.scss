@@ -2,11 +2,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif,'Courier New', Courier, monospace;
+}
 .th_container{
-  transition: 2s right ease;
+  transition:all 0.25s linear;
   animation-direction: alternate;
   transform-origin: 100%;
-  transition-duration: 2s;
   .homebg{
     width: 100%;
     height: 50vh;
@@ -18,12 +23,5 @@
     object-fit: cover;
     background-position: center;
   }
-  ::after{
-    width: 100%;
-    height: 50vh;
-    margin: 0%;
-    transition: all .5s linear;
-    z-index: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+
 }

@@ -12,18 +12,31 @@ a{
     padding: 5px 10px;
     border:1px solid white;
     border-radius: 5px;
-    margin: 0;
+
   }
   :hover{
-    color: white;
+    transform: translateX(-50%,0);
+    background-color: none;
+    color: orangered;
+    transition: background-color 0.25s linear, color 0.25s linear 0.25s;
   }
 }
+.toogle{
 
-.mobile{
-  transition: all 2s ease-out;
-  transition-delay: 1s;
-}
-button{
-  transition: all 2s ease-out;
-  transition-delay: 2s;
+  button{
+    transition: all 0.25s linear 0.5s;
+  }
+  .mobile{
+    ul{
+      ::before{
+        background-color: none;
+        width: 0px;
+        height: 0px;
+        transition: all 0.5s linear 0s;
+      }
+      li{
+        transition: text 0.25s linear 0.5s;
+      }
+    }
+  }
 }

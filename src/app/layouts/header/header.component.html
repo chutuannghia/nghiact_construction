@@ -1,5 +1,5 @@
 <nav class="fixed z-30 w-full hidden xl:flex flex-wrap items-center justify-between px-2 laptop" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
-  <div class="w-full mx-auto flex flex-wrap items-center justify-between 2xl:px-12 py-2">
+  <div class="w-full mx-auto flex flex-wrap items-center justify-between md:px-8 2xl:px-12 py-2">
     <div class="w-full flex lg:w-auto  px-4 lg:block lg:justify-start">
       <a routerLink="/home" class="items-center">
         <div *ngIf="changeColor; else elseValue">
@@ -44,7 +44,7 @@
     </ul>
   </div>
 </nav>
-<nav class="fixed w-full z-30 xl:hidden flex flex-wrap items-center justify-between mb-3" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
+<nav class="fixed w-full z-30 xl:hidden flex flex-wrap items-center justify-between mb-3 toogle" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
   <div class="container px-auto flex flex-wrap items-center justify-between">
     <button [ngClass]="{'hidden':showMenu,'flex':!showMenu}" class="flex items-center pl-12 my-auto py-4" (click)="toggleNavbar()">
       <fa-icon class="text-3xl text-white" [icon]="faBars"></fa-icon>
@@ -59,7 +59,7 @@
     </a>
   </div>
   <div [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="fixed mobile">
-    <ul class="list-none pl-auto fixed w-48 h-screen bg-black pl-8">
+    <ul class="list-none pl-auto fixed pl-8 w-48 bg-black h-0" [ngClass]="{'min-h-screen':showMenu}">
       <li class="nav-item pb-7 pt-2">
         <button [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="flex items-center px-3 py-2" (click)="toggleNavbar()">
           <span class="text-3xl text-white">&#x2715;</span>
