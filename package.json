@@ -8,10 +8,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run nghiact_construction:serve-ssr",
-    "serve:ssr": "node dist/nghiact_construction/server/main.js",
-    "build:ssr": "ng build && ng run nghiact_construction:server",
-    "prerender": "ng run nghiact_construction:prerender"
+    "dev:ssr": "ng run newcons:serve-ssr",
+    "serve:ssr": "node dist/newcons/server/main.js",
+    "build:ssr": "ng build && ng run newcons:server",
+    "prerender": "ng run newcons:prerender"
   },
   "private": true,
   "dependencies": {

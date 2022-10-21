@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "nghiact_construction": {
+    "newcons": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/nghiact_construction/browser",
+            "outputPath": "dist/newcons/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "nghiact_construction:build:production"
+              "browserTarget": "newcons:build:production"
             },
             "development": {
-              "browserTarget": "nghiact_construction:build:development"
+              "browserTarget": "newcons:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "nghiact_construction:build"
+            "browserTarget": "newcons:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/nghiact_construction/server",
+            "outputPath": "dist/newcons/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
@@ -133,12 +133,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "nghiact_construction:build:development",
-              "serverTarget": "nghiact_construction:server:development"
+              "browserTarget": "newcons:build:development",
+              "serverTarget": "newcons:server:development"
             },
             "production": {
-              "browserTarget": "nghiact_construction:build:production",
-              "serverTarget": "nghiact_construction:server:production"
+              "browserTarget": "newcons:build:production",
+              "serverTarget": "newcons:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -152,12 +152,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "nghiact_construction:build:production",
-              "serverTarget": "nghiact_construction:server:production"
+              "browserTarget": "newcons:build:production",
+              "serverTarget": "newcons:server:production"
             },
             "development": {
-              "browserTarget": "nghiact_construction:build:development",
-              "serverTarget": "nghiact_construction:server:development"
+              "browserTarget": "newcons:build:development",
+              "serverTarget": "newcons:server:development"
             }
           },
           "defaultConfiguration": "production"
