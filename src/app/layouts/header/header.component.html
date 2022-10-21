@@ -1,4 +1,5 @@
-<nav class="fixed z-30 w-full hidden xl:flex flex-wrap items-center justify-between px-2 laptop" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
+<nav class="fixed z-30 w-full hidden xl:flex flex-wrap items-center justify-between px-2 laptop"
+  [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
   <div class="w-full mx-auto flex flex-wrap items-center justify-between md:px-8 2xl:px-12 py-2">
     <div class="w-full flex lg:w-auto  px-4 lg:block lg:justify-start">
       <a routerLink="/home" class="items-center">
@@ -8,45 +9,53 @@
         <ng-template #elseValue>
           <img src="assets/images/logo.png" class="object-scale-down h-12 w-auto" alt="Flowbite Logo" />
         </ng-template>
-    </a>
+      </a>
     </div>
-    <ul class="flex flex-col lg:flex-row list-none ml-auto justify-between 2xl:w-1/2">
+    <ul class="flex flex-col lg:flex-row list-none ml-auto min-w-[60%] 2xl:w-1/2 justify-between">
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/home" routerLinkActive="active">
+        <a class="pr-2 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white"
+          routerLink="/home" routerLinkActive="active">
           <span class="ml-2 capitalize">home</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/selected" routerLinkActive="active" >
+        <a class="pr-2 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white"
+          routerLink="/selected" routerLinkActive="active">
           <span class="ml-2 capitalize">dự án nổi bật</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/townhouse" routerLinkActive="active">
+        <a class="pr-2 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white"
+          routerLink="/townhouse" routerLinkActive="active">
           <span class="ml-2 capitalize">dự án nhà phố</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/showroom" routerLinkActive="active">
+        <a class="pr-2 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white"
+          routerLink="/showroom" routerLinkActive="active">
           <span class="ml-2 capitalize">văn phòng, showroom</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/projectfb" routerLinkActive="active">
+        <a class="pr-2 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white"
+          routerLink="/projectfb" routerLinkActive="active">
           <span class="ml-2 capitalize">dự án F&B</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="px-3 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white" routerLink="/apartment" routerLinkActive="active">
+        <a class="pr-2 py-2 flex items-center text-sm font-semibold 2xl:text-md leading-snug text-white"
+          routerLink="/apartment" routerLinkActive="active">
           <span class="ml-2 capitalize">dự án căn hộ</span>
         </a>
       </li>
     </ul>
   </div>
 </nav>
-<nav class="fixed w-full z-30 xl:hidden flex flex-wrap items-center justify-between mb-3 toogle" [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
-  <div class="container px-auto flex flex-wrap items-center justify-between">
-    <button [ngClass]="{'hidden':showMenu,'flex':!showMenu}" class="flex items-center pl-12 my-auto py-4" (click)="toggleNavbar()">
+<nav class="fixed w-full z-30 xl:hidden flex flex-wrap items-center justify-between mb-3 toogle"
+  [ngClass]="{'changebg':changeColor,'bg-transparent':!changeColor}">
+  <div class="container pr-2 flex flex-wrap items-center justify-between">
+    <button [ngClass]="{'hidden':showMenu,'flex':!showMenu}" class="flex items-center pl-12 my-auto py-4"
+      (click)="toggleNavbar()">
       <fa-icon class="text-3xl text-white" [icon]="faBars"></fa-icon>
     </button>
     <a href="" class="items-center fixed right-12 my-auto top-2">
@@ -61,37 +70,44 @@
   <div [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="fixed mobile">
     <ul class="list-none pl-auto fixed pl-8 w-48 bg-black h-0" [ngClass]="{'min-h-screen':showMenu}">
       <li class="nav-item pb-7 pt-2">
-        <button [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="flex items-center px-3 py-2" (click)="toggleNavbar()">
+        <button [ngClass]="{'hidden':!showMenu,'flex':showMenu}" class="flex items-center px-3 py-2"
+          (click)="toggleNavbar()">
           <span class="text-3xl text-white">&#x2715;</span>
         </button>
       </li>
       <li class="nav-item pb-2">
-        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/home" routerLinkActive="active">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200"
+          routerLink="/home" routerLinkActive="active">
           <span class="ml-2 capitalize">home</span>
         </a>
       </li>
       <li class="nav-item pb-2">
-        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/selected" routerLinkActive="active">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200"
+          routerLink="/selected" routerLinkActive="active">
           <span class="ml-2 capitalize">dự án nội bật</span>
         </a>
       </li>
       <li class="nav-item pb-2">
-        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/townhouse" routerLinkActive="active">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200"
+          routerLink="/townhouse" routerLinkActive="active">
           <span class="ml-2 capitalize">dự án nhà phố</span>
         </a>
       </li>
       <li class="nav-item pb-2">
-        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/showroom" routerLinkActive="active">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200"
+          routerLink="/showroom" routerLinkActive="active">
           <span class="ml-2 capitalize">văn phòng, showroom</span>
         </a>
       </li>
       <li class="nav-item pb-2">
-        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/projectfb" routerLinkActive="active">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200"
+          routerLink="/projectfb" routerLinkActive="active">
           <span class="ml-2 capitalize">dự án F&B</span>
         </a>
       </li>
       <li class="nav-item pb-2">
-        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200" routerLink="/apartment" routerLinkActive="active">
+        <a class="py-2 flex items-center text-sm font-semibold 2xl:text-xl leading-snug text-gray-200"
+          routerLink="/apartment" routerLinkActive="active">
           <span class="ml-2 capitalize">dự án căn hộ</span>
         </a>
       </li>

@@ -1,16 +1,17 @@
-.homebg{
+.homebg {
   width: 100%;
-    height: 100vh;
-    position:relative;
-    margin: 0%;
-    background-image: url('../../../assets/images/selected/bg-selected.jpg');
-    transition: all .5s linear;
-    z-index: 0;
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
+  height: 100vh;
+  position: relative;
+  margin: 0%;
+  background-image: url('../../../assets/images/selected/bg-selected.jpg');
+  transition: all .5s linear;
+  z-index: 0;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
 }
-.thongke{
+
+.thongke {
   background-image: url('../../../assets/images/selected/bg_selected1.jpg');
   background-size: cover;
   object-fit: cover;

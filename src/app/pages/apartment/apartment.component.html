@@ -1,32 +1,41 @@
 <app-layout>
-  <div class="bg-gray-100 relative th_container">
-    <div *ngFor="let data of apartment;let i = index" class="mb-10">
+  <div class="bg-gray-100 relative th_container pb-1">
+    <div *ngFor="let data of apartment;let i = index" class="pb-2">
       <div class="homebg items-center" style="background-image: url('../../../assets/images/apartment/{{data[0]}}');">
-        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">DỰ ÁN F&B</p>
+        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">DỰ
+          ÁN F&B</p>
       </div>
       <div class="w-full flex absolute mb-4">
         <div class="w-full flex absolute bottom-12 justify-center">
-          <h2 class="text-4xl text-white text-center font-semibold p-3 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">{{data[1]}}</h2>
+          <h2 class="text-4xl text-white text-center font-semibold p-3 rounded-xl"
+            style="background-color: rgba(0, 0, 0,0.5); ">{{data[1]}}</h2>
         </div>
       </div>
-      <div class="w-full relative mt-7 md:mt-12">
+      <div class="w-full relative py-10">
         <div class="text-center">
-          <h2 class="my-3 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">{{data[2]}}</h2>
-          <p class="text-md xl:px-20 mb-5" style="font-family: Helvetica;opacity:0.9">
+          <h2 class="my-0 pb-4" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">{{data[2]}}</h2>
+          <p class="text-base italic" style="font-family: Helvetica; opacity: 0.9">
             {{data[3]}} <br>
-            {{data[4]}} <br>
-            {{data[5]}} <br>
-            {{data[6]}}
+            <span *ngIf="data[4] != ''">
+              {{data[4]}} <br>
+            </span>
+            <span *ngIf="data[5] != ''">
+              {{data[5]}} <br>
+            </span>
+            <span *ngIf="data[6] != ''">
+              {{data[6]}}
+            </span>
           </p>
           <p class="text-md leading-6 px-5 xl:px-20" style="font-family: Helvetica;opacity:0.9">{{data[7]}}</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto py-4 px-8 xl:px-16">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto pt-6 px-8 xl:px-16">
           <div class="justify-start items-center w-full h-full cursor-pointer" *ngFor="let img of apartmentimg[i]">
             <div class="relative w-full transition-all duration-300 cursor-pointer">
               <a style="cursor:pointer">
-                  <img class="rounded-lg w-full xl:h-[250px] drop-shadow-xl" src="../../../assets/images/apartment/{{img[0]}}" alt="{{data[1]}}" />
+                <img class="rounded-lg w-full xl:h-[250px] drop-shadow-xl"
+                  src="../../../assets/images/apartment/{{img[0]}}" alt="{{data[1]}}" />
               </a>
-          </div>
+            </div>
           </div>
         </div>
       </div>

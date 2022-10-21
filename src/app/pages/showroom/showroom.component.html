@@ -1,56 +1,65 @@
 <app-layout>
-  <div class="bg-gray-100 relative th_container">
+  <div class="bg-gray-100 relative th_container pb-1">
     <div *ngIf="change == 1">
       <div class="homebg items-center" style="background-image: url('../../../assets/images/showroom/sr_banner.jpg');">
-        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN PHÒNG, SHOWROOM</p>
+        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN
+          PHÒNG, SHOWROOM</p>
       </div>
       <div class="w-full flex absolute mb-4">
         <div class="w-full flex absolute bottom-20 justify-center">
-          <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">Gym Gigamall Thủ Đức</h2>
+          <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl"
+            style="background-color: rgba(0, 0, 0,0.5); ">Gym Gigamall Thủ Đức</h2>
         </div>
       </div>
-      <div class="w-full relative">
+      <div class="w-full relative py-10">
         <div class="text-center">
-          <h2 class="my-5 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Gym Gigamall Thủ Đức - Phòng tập: Fit 365</h2>
-          <p class="text-md" style="font-family: Helvetica;opacity:0.9">
+          <h2 class="my-0 pb-4" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Gym Gigamall Thủ Đức
+            - Phòng
+            tập: Fit 365</h2>
+          <p class="text-base italic" style="font-family: Helvetica; opacity: 0.9">
             Quy mô: 520m2 <br>
-            Mức đầu tư: 1.5 tỉ <br><br>
+            Mức đầu tư: 1.5 tỉ <br>
           </p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto py-4 px-8 xl:px-16">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto pt-6 px-8 xl:px-16">
           <div class="justify-start items-center w-full h-full cursor-pointer" *ngFor="let img of gym">
             <div class="relative w-full transition-all duration-300 cursor-pointer">
               <a style="cursor:pointer">
-                  <img class="rounded-lg xl:h-[250px] w-full drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
+                <img class="rounded-lg xl:h-[250px] w-full drop-shadow-xl"
+                  src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
               </a>
-          </div>
+            </div>
           </div>
         </div>
       </div>
       <div>
-        <div class="homebg items-center" style="background-image: url('../../../assets/images/showroom/sr-banner1.jpg');">
-          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN PHÒNG, SHOWROOM</p>
+        <div class="homebg items-center"
+          style="background-image: url('../../../assets/images/showroom/sr-banner1.jpg');">
+          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">
+            VĂN PHÒNG, SHOWROOM</p>
         </div>
         <div class="w-full flex absolute mb-4">
           <div class="w-full flex absolute bottom-20 justify-center">
-            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">Showroom</h2>
+            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl"
+              style="background-color: rgba(0, 0, 0,0.5); ">Showroom</h2>
           </div>
         </div>
-        <div class="w-full relative">
+        <div class="w-full relative py-10">
           <div class="text-center">
-            <h2 class="my-5 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Showroom - Mushroom Decor</h2>
-            <p class="text-md" style="font-family: Helvetica;opacity:0.9">
+            <h2 class="my-0 pb-4" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Showroom - Mushroom
+              Decor</h2>
+            <p class="text-base italic" style="font-family: Helvetica; opacity: 0.9">
               Chủ Đầu Tư: chị Ngân<br>
               Quy mô: 50m2 <br>
               Mức đầu tư: 100tr <br>
-
             </p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-auto justify-center py-4 px-8 xl:px-16">
-            <div class="justify-start items-center mb-4 w-full h-full" *ngFor="let img of Mushroom;let i = index">
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 w-auto justify-center pt-6 px-8 xl:px-16">
+            <div class="justify-start items-center w-full h-full" *ngFor="let img of Mushroom;let i = index">
               <div class="relative w-full transition-all duration-300 cursor-pointer">
                 <a style="cursor:pointer">
-                    <img class="rounded-lg w-full xl:h-[250px] w-dull drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
+                  <img class="rounded-lg w-full xl:h-[250px] w-dull drop-shadow-xl"
+                    src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
                 </a>
               </div>
             </div>
@@ -60,238 +69,304 @@
     </div>
 
     <div *ngIf="change == 2">
-      <div class="homebg items-center" style="background-image: url('../../../assets/images/showroom/sr-banner2.jpg');">
-        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN PHÒNG, SHOWROOM</p>
-      </div>
-      <div class="w-full flex absolute mb-4">
-        <div class="w-full flex absolute bottom-20 justify-center">
-          <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">Văn phòng</h2>
+      <div>
+        <div class="homebg items-center"
+          style="background-image: url('../../../assets/images/showroom/sr-banner2.jpg');">
+          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">
+            VĂN
+            PHÒNG, SHOWROOM</p>
         </div>
-      </div>
-      <div class="w-full relative">
-        <div class="text-center">
-          <h2 class="my-5 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Văn phòng - Shire Oak Interational</h2>
-          <p class="text-md" style="font-family: Helvetica;opacity:0.9">
-            Chủ Đầu Tư: Shire Oak Interational <br>
-            Quy mô: 30m2 <br>
-            Mức đầu tư: 150tr <br>
-          </p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-5 w-auto py-4 px-8 xl:px-16">
-          <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of soi">
-            <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
-              <a style="cursor:pointer">
-                  <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
-              </a>
+        <div class="w-full flex absolute mb-4">
+          <div class="w-full flex absolute bottom-20 justify-center">
+            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl"
+              style="background-color: rgba(0, 0, 0,0.5); ">Văn phòng</h2>
           </div>
+        </div>
+        <div class="w-full relative py-10">
+          <div class="text-center">
+            <h2 class="my-0 pb-4" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Văn phòng - Shire
+              Oak
+              Interational</h2>
+            <p class="text-base italic" style="font-family: Helvetica; opacity: 0.9">
+              Chủ Đầu Tư: Shire Oak Interational <br>
+              Quy mô: 30m2 <br>
+              Mức đầu tư: 150tr <br>
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto pt-6 px-8 xl:px-16">
+            <div class="justify-start items-center last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of soi">
+              <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
+                <a style="cursor:pointer">
+                  <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}"
+                    alt="{{img[1]}}" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div>
-        <div class="homebg items-center" style="background-image: url('../../../assets/images/showroom/sr-banner3.jpg');">
-          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN PHÒNG, SHOWROOM</p>
+        <div class="homebg items-center"
+          style="background-image: url('../../../assets/images/showroom/sr-banner3.jpg');">
+          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">
+            VĂN PHÒNG, SHOWROOM</p>
         </div>
         <div class="w-full flex absolute mb-4">
           <div class="w-full flex absolute bottom-20 justify-center">
-            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">Văn phòng</h2>
+            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl"
+              style="background-color: rgba(0, 0, 0,0.5); ">Văn phòng</h2>
           </div>
         </div>
-        <div class="w-full relative">
+        <div class="w-full relative py-10">
           <div class="text-center">
-            <h2 class="my-5 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Văn phòng - Cửa Việt Minh Long</h2>
-            <p class="text-md" style="font-family: Helvetica;opacity:0.9">
+            <h2 class="my-0 pb-4" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Văn phòng - Cửa
+              Việt Minh Long
+            </h2>
+            <p class="text-base italic" style="font-family: Helvetica; opacity: 0.9">
               Chủ Đầu Tư: Anh Bùi Thanh Liêm <br>
               Quy mô: 50m2 <br>
               Mức đầu tư: 200tr <br>
             </p>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-5 w-auto py-4 px-8 xl:px-16">
-            <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of vml">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto pt-6 px-8 xl:px-16">
+            <div class="justify-start items-center last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of vml">
               <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
                 <a style="cursor:pointer">
-                    <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
+                  <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}"
+                    alt="{{img[1]}}" />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="homebg items-center" style="background-image: url('../../../assets/images/showroom/sr-banner5.jpg');">
-        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN PHÒNG, SHOWROOM</p>
-      </div>
-      <div class="w-full flex absolute mb-4">
-        <div class="w-full flex absolute bottom-20 justify-center">
-          <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">Showroom</h2>
+      <div>
+        <div class="homebg items-center"
+          style="background-image: url('../../../assets/images/showroom/sr-banner4.jpg');">
+          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">
+            VĂN
+            PHÒNG, SHOWROOM</p>
         </div>
-      </div>
-      <div class="w-full relative">
-        <div class="text-center">
-          <h2 class="my-5 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Showroom - Đại Nam Music</h2>
-          <p class="text-md" style="font-family: Helvetica;opacity:0.9">
-            Chủ Đầu Tư: Anh Nam <br>
-            Quy mô: 3 phòng (Tiếp khách - Kho - Lễ Tân) <br>
-            Mức đầu tư: 250tr<br>
-          </p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto py-4 px-8 xl:px-16">
-          <div class="justify-start items-center w-full h-full cursor-pointer" *ngFor="let img of dnm">
-            <div class="relative w-full transition-all duration-300 cursor-pointer">
-              <a style="cursor:pointer">
-                  <img class="rounded-lg xl:h-[250px] w-full drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
-              </a>
-            </div>
+        <div class="w-full flex absolute mb-4">
+          <div class="w-full flex absolute bottom-20 justify-center">
+            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl"
+              style="background-color: rgba(0, 0, 0,0.5); ">Showroom</h2>
           </div>
         </div>
-        <div>
-          <div class="homebg items-center" style="background-image: url('../../../assets/images/showroom/sr-banner3.jpg');">
-            <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN PHÒNG, SHOWROOM</p>
+        <div class="w-full relative py-10">
+          <div class="text-center">
+            <h2 class="my-0 pb-4" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Showroom - Đại Nam
+              Music</h2>
+            <p class="text-base italic" style="font-family: Helvetica; opacity: 0.9">
+              Chủ Đầu Tư: Anh Nam <br>
+              Quy mô: 3 phòng (Tiếp khách - Kho - Lễ Tân) <br>
+              Mức đầu tư: 250tr<br>
+            </p>
           </div>
-          <div class="w-full flex absolute mb-4">
-            <div class="w-full flex absolute bottom-20 justify-center">
-              <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">Văn phòng</h2>
-            </div>
-          </div>
-          <div class="w-full relative">
-            <div class="text-center">
-              <h2 class="my-5 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Văn phòng - Phố Hương Coffee</h2>
-              <p class="text-md" style="font-family: Helvetica;opacity:0.9">
-                Chủ Đầu Tư: Anh Bình <br>
-                Quy mô: 250m2 <br>
-                Mức đầu tư: 2 tỷ <br>
-              </p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-5 22xl:gap-8 w-auto py-4 px-8 xl:px-16">
-              <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of phc">
-                <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
-                  <a style="cursor:pointer">
-                      <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
-                  </a>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto pt-6 px-8 xl:px-16">
+            <div class="justify-start items-center w-full h-full cursor-pointer" *ngFor="let img of dnm">
+              <div class="relative w-full transition-all duration-300 cursor-pointer">
+                <a style="cursor:pointer">
+                  <img class="rounded-lg xl:h-[250px] w-full drop-shadow-xl"
+                    src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
+                </a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="homebg items-center"
+          style="background-image: url('../../../assets/images/showroom/sr-banner5.jpg');">
+          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">
+            VĂN PHÒNG, SHOWROOM</p>
+        </div>
+        <div class="w-full flex absolute mb-4">
+          <div class="w-full flex absolute bottom-20 justify-center">
+            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl"
+              style="background-color: rgba(0, 0, 0,0.5); ">Văn phòng</h2>
+          </div>
+        </div>
+        <div class="w-full relative py-10">
+          <div class="text-center">
+            <h2 class="pb-4 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Văn phòng - Phố Hương
+              Coffee
+            </h2>
+            <p class="text-base italic" style="font-family: Helvetica; opacity: 0.9">
+              Chủ Đầu Tư: Anh Bình <br>
+              Quy mô: 250m2 <br>
+              Mức đầu tư: 2 tỷ <br>
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 2xl:gap-8 w-auto pt-6 px-8 xl:px-16">
+            <div class="justify-start items-center last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of phc">
+              <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
+                <a style="cursor:pointer">
+                  <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}"
+                    alt="{{img[1]}}" />
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div *ngIf="change == 3">
-      <div class="homebg items-center" style="background-image: url('../../../assets/images/showroom/sr-banner6.jpg');">
-        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN PHÒNG, SHOWROOM</p>
-      </div>
-      <div class="w-full flex absolute mb-4">
-        <div class="w-full flex absolute bottom-20 justify-center">
-          <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">Văn phòng</h2>
+      <div>
+        <div class="homebg items-center"
+          style="background-image: url('../../../assets/images/showroom/sr-banner6.jpg');">
+          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">
+            VĂN
+            PHÒNG, SHOWROOM</p>
         </div>
-      </div>
-      <div class="w-full relative">
-        <div class="text-center">
-          <h2 class="my-5 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Văn phòng - VP Cao Gia</h2>
-          <p class="text-md" style="font-family: Helvetica;opacity:0.9">
-            Chủ Đầu Tư: Anh Bình <br>
-            Quy mô: 250m2 <br>
-            Mức đầu tư: 1.5 tỷ <br>
-          </p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-5 w-auto py-4 px-8 xl:px-16">
-          <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of vpcg">
-            <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
-              <a style="cursor:pointer">
-                  <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
-              </a>
+        <div class="w-full flex absolute mb-4">
+          <div class="w-full flex absolute bottom-20 justify-center">
+            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl"
+              style="background-color: rgba(0, 0, 0,0.5); ">Văn phòng</h2>
           </div>
+        </div>
+        <div class="w-full relative py-10">
+          <div class="text-center">
+            <h2 class="my-0 pb-4" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Văn phòng - VP Cao
+              Gia</h2>
+            <p class="text-base italic" style="font-family: Helvetica; opacity: 0.9">
+              Chủ Đầu Tư: Anh Bình <br>
+              Quy mô: 250m2 <br>
+              Mức đầu tư: 1.5 tỷ <br>
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto pt-6 px-8 xl:px-16">
+            <div class="justify-start items-center last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of vpcg">
+              <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
+                <a style="cursor:pointer">
+                  <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}"
+                    alt="{{img[1]}}" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div>
-        <div class="homebg items-center" style="background-image: url('../../../assets/images/showroom/sr-banner7.jpg');">
-          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN PHÒNG, SHOWROOM</p>
+        <div class="homebg items-center"
+          style="background-image: url('../../../assets/images/showroom/sr-banner7.jpg');">
+          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">
+            VĂN PHÒNG, SHOWROOM</p>
         </div>
         <div class="w-full flex absolute mb-4">
           <div class="w-full flex absolute bottom-20 justify-center">
-            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">Barber Shop</h2>
+            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl"
+              style="background-color: rgba(0, 0, 0,0.5); ">Barber Shop</h2>
           </div>
         </div>
-        <div class="w-full relative">
+        <div class="w-full relative py-10">
           <div class="text-center">
-            <h2 class="my-5 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Barber Shop - Phương Đại</h2>
-            <p class="text-md" style="font-family: Helvetica;opacity:0.9">
+            <h2 class="my-0 pb-4" style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;">Barber Shop -
+              Phương Đại</h2>
+            <p class="text-base italic" style="font-family: Helvetica; opacity: 0.9">
               Chủ Đầu Tư: Mr. Đại <br>
               Quy mô: 130m2 <br>
               Mức đầu tư: 600tr <br>
             </p>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-5 w-auto py-4 px-8 xl:px-16">
-            <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of vml">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto pt-6 px-8 xl:px-16">
+            <div class="justify-start items-center last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of vml">
               <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
                 <a style="cursor:pointer">
-                    <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
+                  <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}"
+                    alt="{{img[1]}}" />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="homebg items-center" style="background-image: url('../../../assets/images/showroom/sr-banner8.jpg');">
-        <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN PHÒNG, SHOWROOM</p>
-      </div>
-      <div class="w-full flex absolute mb-4">
-        <div class="w-full flex absolute bottom-20 justify-center">
-          <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">Zaha Spa</h2>
+      <div>
+        <div class="homebg items-center"
+          style="background-image: url('../../../assets/images/showroom/sr-banner8.jpg');">
+          <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">
+            VĂN
+            PHÒNG, SHOWROOM</p>
         </div>
-      </div>
-      <div class="w-full relative mt-8">
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto py-4 px-8 xl:px-16">
-          <div class="justify-start items-center w-full h-full cursor-pointer" *ngFor="let img of zs">
-            <div class="relative w-full transition-all duration-300 cursor-pointer">
-              <a style="cursor:pointer">
-                  <img class="rounded-lg xl:h-[250px] w-full drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
-              </a>
+        <div class="w-full flex absolute mb-4">
+          <div class="w-full flex absolute bottom-20 justify-center">
+            <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl"
+              style="background-color: rgba(0, 0, 0,0.5); ">Zaha Spa</h2>
+          </div>
+        </div>
+        <div class="w-full relative mt-8">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-auto pt-6 px-8 xl:px-16">
+            <div class="justify-start items-center w-full h-full cursor-pointer" *ngFor="let img of zs">
+              <div class="relative w-full transition-all duration-300 cursor-pointer">
+                <a style="cursor:pointer">
+                  <img class="rounded-lg xl:h-[250px] w-full drop-shadow-xl"
+                    src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div>
         <div>
-          <div class="homebg items-center" style="background-image: url('../../../assets/images/showroom/sr-banner9.jpg');">
-            <p class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">VĂN PHÒNG, SHOWROOM</p>
+          <div class="homebg items-center"
+            style="background-image: url('../../../assets/images/showroom/sr-banner9.jpg');">
+            <p
+              class="text-2xl absolute text-end right-0 pr-10 pl-32 font-bold ml-12 bg-gray-700 text-white py-2 top-32">
+              VĂN PHÒNG, SHOWROOM</p>
           </div>
           <div class="w-full flex absolute mb-4">
             <div class="w-full flex absolute bottom-20 justify-center">
-              <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl" style="background-color: rgba(0, 0, 0,0.5); ">Văn phòng</h2>
+              <h2 class="text-4xl text-white text-center font-semibold p-6 rounded-xl"
+                style="background-color: rgba(0, 0, 0,0.5); ">Văn phòng</h2>
             </div>
           </div>
           <div class="w-full relative">
             <div class="text-center">
-              <h2 class="my-5 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Văn phòng - Sagen Group</h2>
-              <p class="text-md" style="font-family: Helvetica;opacity:0.9">
-                Chủ đầu tư: Anh Sáng <br><br>
+              <h2 class="pb-4 text-2xl" style=" font-family: Arial, Helvetica, sans-serif;">Văn phòng - Sagen Group
+              </h2>
+              <p class="text-base italic" style="font-family: Helvetica; opacity: 0.9">
+                Chủ đầu tư: Anh Sáng <br>
               </p>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-5 22xl:gap-8 w-auto py-4 px-8 xl:px-16">
-              <div class="justify-start items-center mb-4 last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of sg">
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 2xl:gap-8 w-auto pt-6 px-8 xl:px-16">
+              <div class="justify-start items-center last:mr-auto w-full h-full cursor-pointer" *ngFor="let img of sg">
                 <div class="relative max-w-sm transition-all duration-300 cursor-pointer">
                   <a style="cursor:pointer">
-                      <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}" alt="{{img[1]}}" />
+                    <img class="rounded-lg xl:h-[250px] drop-shadow-xl" src="../../../assets/images/showroom/{{img[0]}}"
+                      alt="{{img[1]}}" />
                   </a>
-              </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="fixed top-1/2 xl:left-5 left-0 transition-all">
       <button (click)="slickleft()" class="text-2xl cursor-pointer">
-        <span class=" md:hidden hover:opacity-100 hover:text-gray-600 dark:text-gray-300 text-gray-500"><</span>
-       <div class="hidden md:block">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class=" opacity-30 hover:opacity-100 hover:text-gray-600 dark:text-gray-300" width="30"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-       </div>
+        <span class=" md:hidden hover:opacity-100 hover:text-gray-600 dark:text-gray-300 text-gray-500">
+        </span>
+        <div class="hidden md:block">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+            class=" opacity-30 hover:opacity-100 hover:text-gray-600 dark:text-gray-300" width="30">
+            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+          </svg>
+        </div>
       </button>
     </div>
     <div class="fixed top-1/2 right-0 xl:right-5 transition-all">
       <button (click)="slickright()" class="text-2xl cursor-pointer ">
         <p class=" md:hidden hover:opacity-100 hover:text-gray-600 dark:text-gray-300 text-gray-500">></p>
         <div class="hidden md:block">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="opacity-30 hover:opacity-100 hover:text-gray-800  dark:text-gray-300" width="30"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+            class="opacity-30 hover:opacity-100 hover:text-gray-800  dark:text-gray-300" width="30">
+            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+          </svg>
         </div>
       </button>
     </div>

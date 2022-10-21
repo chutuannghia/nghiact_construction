@@ -1,40 +1,46 @@
-.laptop{
+.laptop {
   width: 100%;
   transition: all 1s ease-in;
 }
-.changebg{
+
+.changebg {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-a{
+a {
   cursor: pointer;
-  &.active{
-    padding: 5px 10px;
-    border:1px solid white;
-    border-radius: 5px;
 
+  &.active {
+    padding: 5px auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(29, 28, 28, 0.5);
   }
-  :hover{
-    transform: translateX(-50%,0);
+
+  :hover {
+    transform: translateX(-50%, 0);
     background-color: none;
     color: orangered;
     transition: background-color 0.25s linear, color 0.25s linear 0.25s;
   }
 }
-.toogle{
 
-  button{
+.toogle {
+
+  button {
     transition: all 0.25s linear 0.5s;
   }
-  .mobile{
-    ul{
-      ::before{
+
+  .mobile {
+    ul {
+      ::before {
         background-color: none;
         width: 0px;
         height: 0px;
         transition: all 0.5s linear 0s;
       }
-      li{
+
+      li {
         transition: text 0.25s linear 0.5s;
       }
     }
