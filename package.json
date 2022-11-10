@@ -3,16 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "dev": "ng serve --port $PORT",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "dev:ssr": "ng run newcons:serve-ssr",
-    "serve:ssr": "node dist/newcons/server/main.js",
-    "build:ssr": "ng build && ng run newcons:server",
-    "prerender": "ng run newcons:prerender",
-    "vercel-build": "npm run build:ssr"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
