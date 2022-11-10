@@ -11,7 +11,8 @@
     "dev:ssr": "ng run newcons:serve-ssr",
     "serve:ssr": "node dist/newcons/server/main.js",
     "build:ssr": "ng build && ng run newcons:server",
-    "prerender": "ng run newcons:prerender"
+    "prerender": "ng run newcons:prerender",
+    "vercel-build": "npm run build:ssr"
   },
   "private": true,
   "dependencies": {
