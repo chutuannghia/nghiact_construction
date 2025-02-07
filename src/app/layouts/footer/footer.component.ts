@@ -20,7 +20,6 @@ export class FooterComponent implements OnInit {
       // here you can run any browser specific code, like:
       window.scroll({
         top: 0,
-        left: 0,
         behavior: 'smooth',
       });
     }
